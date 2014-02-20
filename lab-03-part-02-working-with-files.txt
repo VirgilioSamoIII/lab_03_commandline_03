@@ -12,7 +12,7 @@ Follow the instructions line-by-line.
 [NO OUTPUT]
 ----------
 ==========
-2. Find out if mtec1002-lab-02 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
+2. Find out if mtec1002-lab-03 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
 
 (See steps 1-8 in http://foureyes.github.io/mtec1002-spring2014/labs/03/lab-03-part-02-working-with-files.txt)
 [NO OUTPUT]
@@ -35,7 +35,8 @@ Follow the instructions line-by-line.
 $ touch foo.txt
 $ ls
 Copy and paste the output below.
-----------
+
+foo.txt
 
 
 
@@ -51,7 +52,11 @@ $ touch bar.txt
 8. List the files in this directory using the flag that gives the most details.
 
 Copy and paste the output below.
-----------
+
+drwxr-xr-x  4 student  staff  136 Feb 19 19:39 .
+drwxr-xr-x  7 student  staff  238 Feb 19 19:38 ..
+-rw-r--r--  1 student  staff    0 Feb 19 19:39 bar.txt
+-rw-r--r--  1 student  staff    0 Feb 19 19:38 foo.txt
 
 
 
@@ -60,21 +65,35 @@ Copy and paste the output below.
 
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
-----------
 
+cp bar.txt baz.txt
+
+drwxr-xr-x  5 student  staff  170 Feb 19 19:46 .
+drwxr-xr-x  7 student  staff  238 Feb 19 19:38 ..
+-rw-r--r--  1 student  staff    0 Feb 19 19:39 bar.txt
+-rw-r--r--  1 student  staff    0 Feb 19 19:46 baz.txt
+-rw-r--r--  1 student  staff    0 Feb 19 19:38 foo.txt
 
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
-----------
+
+rm bar.txt
+
+drwxr-xr-x  4 student  staff  136 Feb 19 19:48 .
+drwxr-xr-x  7 student  staff  238 Feb 19 19:38 ..
+-rw-r--r--  1 student  staff    0 Feb 19 19:46 baz.txt
+-rw-r--r--  1 student  staff    0 Feb 19 19:38 foo.txt
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
-----------
+
+mv foo.txt 
 
 
 
@@ -175,4 +194,13 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
+----------
+
+
+==========
+OPTIONAL
+
+23.  Make sure you're in the books/other folder.  Copy all of the txt files from that folder to your home directory using wildcard matching.
+
+Write the command that you used below.
 ----------
