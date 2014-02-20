@@ -112,8 +112,8 @@ c. print out "I'm done backing up"
 Write out the code in your file below...
 
 mkdir backup
-*.txt
-“I’m done backing up”
+cp *.txt backup
+echo “I’m done backing up”
 
 
 
@@ -138,7 +138,8 @@ touch 2.txt
 12. Move the script that you created into this directory.
 
 What commands did you use to do this?
-----------
+
+mv copy_to_backup.sh test
 
 
 
@@ -146,7 +147,8 @@ What commands did you use to do this?
 13. Run your script.
 
 What commands did you use to do this?
-----------
+
+./copy_to_backup.sh
 
 
 
@@ -154,4 +156,8 @@ What commands did you use to do this?
 14. Verify that a backup folder was created in your home directory... with copies of the files present.
 
 What commands did you use to do this?  Show the output.
-----------
+
+ls backup/
+
+1.txt	2.txt
+
